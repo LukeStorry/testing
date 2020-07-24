@@ -19,11 +19,12 @@ collections:
               widget: list,
               fields:
                 [
-                  { label: Title, name: title, widget: string },
+                  { label: Title, name: title, widget: string, default: '' },
                   {
                     label: Subgroups,
                     name: subgroups,
                     widget: list,
+                    default: [{subtitle: ''}],
                     fields:
                       [{ label: Subtitle, name: subtitle, widget: string }],
                   },
